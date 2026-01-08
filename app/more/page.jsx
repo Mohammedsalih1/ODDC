@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import BlogSection from "../ui/Blog";
+import GallerySection from "../ui/Gallary";
 
 export default function BeforeAfterGallery() {
   const cases = [
@@ -34,7 +35,8 @@ export default function BeforeAfterGallery() {
 
   return (
     <>
-    <section className="py-16 mt-20 px-4 md:px-12 bg-gray-50" dir="rtl">
+    <GallerySection />
+    <section className="py-16 mt-2 px-4 md:px-12 bg-gray-50" dir="rtl">
       <div className="max-w-6xl mx-auto text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
           قبل و بعد
@@ -55,7 +57,7 @@ export default function BeforeAfterGallery() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
           >
-            <div className="relative h-72 w-full">
+            <div className="relative h-90 w-full">
               <Image
                 // src={active === item.id ? item.after : item.before}
                 src={item.before}

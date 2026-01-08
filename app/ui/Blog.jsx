@@ -39,7 +39,7 @@ export default function BlogSection() {
         {/* Header */}
         <div className="text-center mb-14">
           <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
-            مقالات ونصائح رياضية
+            مقالات ونصائح
           </h2>
           <p className="text-gray-900 max-w-2xl mx-auto">
             اكتشف أحدث المقالات والنصائح من خبرائنا لمساعدتك على تحقيق أفضل

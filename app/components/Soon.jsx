@@ -17,7 +17,7 @@ export default function InsuranceSection() {
             وقريبا...
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8">
           {companies.map((company, i) => (
             <div
               key={i}
