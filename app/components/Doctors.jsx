@@ -24,7 +24,7 @@ const doctors = [
     name: "د. رؤى حمزة",
     specialty: "أخصائية الاطفال وذوي الاحتياجات الخاصة",
     role: "استشارية قريبا",
-    image: "/staff-members/doc3.JPG",
+    image: "/staff-members/doc3.jpg",
   },
   {
     name: "د. شهوب محمد عبد الله",
@@ -40,16 +40,6 @@ const doctors = [
 //     name: "د. روان حسين",
 //     specialty: "أخصائية أسنان أطفال",
 //     image: "/doctors/doc6.jpg",
-//   },
-//   {
-//     name: "د. خالد منصور",
-//     specialty: "استشاري جراحة الفم",
-//     image: "/doctors/doc7.jpg",
-//   },
-//   {
-//     name: "د. أريج هاشم",
-//     specialty: "طبيبة أسنان تجميلية",
-//     image: "/doctors/doc8.jpg",
 //   },
 ];
 
