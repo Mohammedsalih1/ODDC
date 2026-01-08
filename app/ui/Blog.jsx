@@ -74,12 +74,12 @@ export default function BlogSection() {
                   {blog.description}
                 </p>
 
-                <Link
-                  href="/blog"
+                <a
+                  href="https://web.facebook.com/profile.php?id=100083420886478"
                   className="inline-block text-blue-500 font-semibold hover:underline"
                 >
                   اقرأ المزيد →
-                </Link>
+                </a>
               </div>
             </div>
           ))}
