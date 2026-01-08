@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
 // import { assets } from "@/assets/assets";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -13,9 +13,9 @@ export default function Navbar() {
         <div className="flex justify-between items-center py-2">
 
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-2">
             <Image src="/mainlogo.jpg" alt="website logo" width={584} height={509} className="w-18" />
-          </div>
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8 text-gray-600 font-medium">
