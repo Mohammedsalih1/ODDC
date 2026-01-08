@@ -1,6 +1,27 @@
 @import "tailwindcss";
 
-:root {
+body {
+  background-color: white !important;
+  color: #55A0DD;
+}
+/* Normal bullet */
+.custom-bullet {
+  /* background-image: url("/icons/kids.svg"); */
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  margin: 0 6px;
+}
+
+/* Active bullet */
+.custom-bullet-active {
+  opacity: 1;
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 4px #3b82f6);
+}
+
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -18,9 +39,4 @@
     --foreground: #ededed;
   }
 }
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+*/
