@@ -5,7 +5,7 @@ export default function InsuranceSection() {
   const companies = [
     "شركة النيلين للتأمين",
     "الصندوق الطبي لشركة ارباب للتعدين",
-    "حزمة الخدات الطبية",
+    "حزمة الخدمات الطبية الاضافية",
     "سي اي اس هيلث كير CIS Healthcare",
   ];
 
