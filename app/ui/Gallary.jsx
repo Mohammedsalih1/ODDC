@@ -1,3 +1,5 @@
+'use-client'
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function GallerySection() {
@@ -16,13 +18,12 @@ export default function GallerySection() {
 
   return (
     <section className="py-20 bg-gray-50 mt-5 border-b border-blue-400" id="gallery">
-      <div className="max-w-7xl mx-auto px-6">
+      <div  className="max-w-7xl mx-auto px-6">
 
         {/* Headline */}
         <div className="text-center mb-14">
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
             نعرض لكم لمحة من داخل العيادة، أجهزتنا الحديثة، ونماذج من جودة خدماتنا
-           
           </p>
         </div>
 
@@ -48,6 +49,14 @@ export default function GallerySection() {
             </div>
           ))}
         </div>
+
+
+
+
+
+
+
+
 
       </div>
     </section>

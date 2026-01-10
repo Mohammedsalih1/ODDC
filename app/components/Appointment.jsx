@@ -1,5 +1,5 @@
 "use client";
-
+import { motion } from "framer-motion";
 import { useState } from "react";
 import Image from "next/image";
 // import { assets } from "@/assets/assets";
@@ -70,7 +70,7 @@ export default function AppointmentSection() {
 
         {/* ---------- IMAGE ---------- */}
         <div className="w-full">
-          <div className="rounded-3xl overflow-hidden shadow-xl">
+          <motion.div initial={{y: 20, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{delay: 0.3, duration: 0.5}} className="rounded-3xl overflow-hidden shadow-xl">
             <Image
               src="/images/clinic-office.jpg" // ضع صورة الكلينك هنا
               width={800}
@@ -78,21 +78,21 @@ export default function AppointmentSection() {
               alt="عيادة الأسنان"
               className="w-full h-full object-cover"
             />
-          </div>
+          </motion.div>
         </div>
 
         {/* ---------- FORM ---------- */}
         <div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <motion.h2 initial={{y: 20, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{delay: 0.5, duration: 0.5}} className="text-3xl font-bold text-gray-900 mb-4">
             احجز موعدك الآن <Image src="/contact.png" alt="" width={42} height={42} className="inline-block w-14 h-14 mb-1" />
-          </h2>
+          </motion.h2>
 
-          <p className="text-gray-600 mb-8 leading-relaxed">
+          <motion.p initial={{y: 20, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{delay: 0.7, duration: 0.5}} className="text-gray-600 mb-8 leading-relaxed">
             اغتنم فرصة الحصول على رعاية أسنان مميزة على يد نخبة من الأطباء المختصين.
             كل ما عليك هو تعبئة البيانات التالية وسيتم التواصل معك مباشرة.
-          </p>
+          </motion.p>
 
-          <div className="space-y-5">
+          <motion.div initial={{y: 20, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{delay: 0.9, duration: 0.5}} className="space-y-5">
 
             {/* الاسم */}
             <div>
@@ -100,7 +100,7 @@ export default function AppointmentSection() {
               <input
                 required
                 type="text"
-                className="w-full px-4 py-2 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                className="w-full px-4 py-2 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#3bb7dc] focus:outline-none"
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
               />
             </div>
@@ -111,7 +111,7 @@ export default function AppointmentSection() {
               <input
                 required
                 type="text"
-                className="w-full px-4 py-2 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                className="w-full px-4 py-2 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#3bb7dc] focus:outline-none"
                 onChange={(e) => setForm({ ...form, phone: e.target.value })}
               />
             </div>
@@ -123,7 +123,7 @@ export default function AppointmentSection() {
               </label>
               <select
                 required
-                className="w-full px-4 py-2 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#3bb7dc]"
                 onChange={(e) => setForm({ ...form, service: e.target.value })}
               >
                 <option value="">اختر الخدمة</option>
@@ -141,7 +141,7 @@ export default function AppointmentSection() {
               <input
                 required
                 type="datetime-local"
-                className="w-full px-4 py-2 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#3bb7dc]"
                 onChange={(e) => setForm({ ...form, date: e.target.value })}
               />
             </div>
@@ -152,7 +152,7 @@ export default function AppointmentSection() {
               </label>
 
               <div className="relative">
-                <span className="absolute left-3 top-1/2 -translate-y-1/2 text-blue-600">
+                <span className="absolute left-3 top-1/2 -translate-y-1/2 focus:ring-[#3bb7dc]">
                   {/* Ticket / Coupon Icon */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -173,7 +173,7 @@ export default function AppointmentSection() {
                 <input
                   type="text"
                   placeholder="مثال: OD2025"
-                  className="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-300 transition bg-white"
+                  className="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:border-[#3bb7dc] focus:ring-2 focus:ring-blue-300 transition bg-white"
                 />
               </div>
 
@@ -188,7 +188,7 @@ export default function AppointmentSection() {
               <button
                 onClick={handleWhatsApp}
                 disabled={!form.name || !form.phone || !form.service || !form.date}
-                className="w-fit bg-blue-500 text-white cursor-pointer py-2 px-4 rounded-xl text-lg font-semibold hover:bg-blue-600 transition disabled:opacity-50"
+                className="w-fit bg-[#3bb7dc] text-white cursor-pointer py-2 px-4 rounded-xl text-lg font-semibold hover:bg-[#3bb7dc] transition disabled:opacity-50"
               >
                 احجز الآن 
               </button>
@@ -199,7 +199,7 @@ export default function AppointmentSection() {
 
                 <a
                   href="tel:+249123952092"
-                  className="flex items-center w-fit py-1 mb-2 px-3 rounded bg-blue-500 text-white font-bold hover:underline"
+                  className="flex items-center w-fit py-1 mb-2 px-3 rounded bg-[#3bb7dc] text-white font-bold hover:underline"
                 >
                   249123952092+ 
                   <Image src="/call.png" alt="call" width={24} height={24} className="inline-block"/>
@@ -209,7 +209,7 @@ export default function AppointmentSection() {
 
                 <a
                   href="tel:+249111155569"
-                  className="flex items-center w-fit py-1 px-3 rounded bg-blue-500 text-white font-bold hover:underline"
+                  className="flex items-center w-fit py-1 px-3 rounded  bg-[#3bb7dc] text-white font-bold hover:underline"
                 >
                     249111155569+
                 <Image src="/call.png" alt="call" width={24} height={24} className="inline-block"/>
@@ -218,7 +218,7 @@ export default function AppointmentSection() {
               </div>
 
             </div>
-          </div>
+          </motion.div>
         </div>
 
       </div>

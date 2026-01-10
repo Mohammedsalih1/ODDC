@@ -101,13 +101,13 @@ export default function ImageSlider() {
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((prev) => (prev + 1) % images.length);
-    }, 4000);
+    }, 3000);
     return () => clearInterval(timer);
   }, [images.length]);
 
 
   return (
-    <div className="relative w-full h-112 md:h-216 md:rounded-2xl mt-22 overflow-hidden">
+    <div className="relative w-full h-110 md:h-216 md:rounded-2xl mt-22 overflow-hidden">
 
       {/* Images */}
       {images.map((img, i) => (
@@ -121,7 +121,7 @@ export default function ImageSlider() {
             src={img}
             alt={`Slide ${i}`}
             fill
-            className="object-cover md:object-contain md:rounded-2xl"
+            className="object-cover md:object-contain rounded-[8px]"
           />
         </div>
       ))}

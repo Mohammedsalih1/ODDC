@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
@@ -15,7 +16,7 @@ export default function ImageSlider({ images = [] }) {
 
 
   return (
-    <div className="relative w-full h-64 md:h-216 overflow-hidden mt-6">
+    <motion.div initial={{y: 20, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{delay: 0.3, duration: 0.5}} className="relative w-full h-64 md:h-216 overflow-hidden mt-6">
 
       {/* Images */}
       {images.map((img, i) => (
@@ -35,6 +36,6 @@ export default function ImageSlider({ images = [] }) {
           />
         </div>
       ))}
-    </div>
+    </motion.div>
   );
 }

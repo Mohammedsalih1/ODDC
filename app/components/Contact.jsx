@@ -27,17 +27,17 @@ export default function ContactUs() {
               <h3 className="text-xl font-semibold text-gray-900 mb-2">اتصل بنا</h3>
 
               <div className="flex items-center gap-3">
-                <span className="animate-ping absolute w-4 h-4 rounded-full bg-blue-500 opacity-75"></span>
-                <span className="relative w-4 h-4 bg-blue-500 rounded-full"></span>
-                <a href="tel:+249111155569" className="text-lg text-gray-800 hover:text-blue-600">
+                <span className="animate-ping absolute w-4 h-4 rounded-full bg-[#3bb7dc] opacity-75"></span>
+                <span className="relative w-4 h-4  bg-[#3bb7dc] rounded-full"></span>
+                <a href="tel:+249111155569" className="text-lg text-gray-800 hover:text-[#3bb7dc]">
                   0111155569
                 </a>
               </div>
 
               <div className="flex items-center gap-3">
-                <span className="animate-ping absolute w-4 h-4 rounded-full bg-blue-500 opacity-75"></span>
-                <span className="relative w-4 h-4 bg-blue-500 rounded-full"></span>
-                <a href="tel:+249123952092" className="text-lg text-gray-800 hover:text-blue-600">
+                <span className="animate-ping absolute w-4 h-4 rounded-full  bg-[#3bb7dc] opacity-75"></span>
+                <span className="relative w-4 h-4  bg-[#3bb7dc] rounded-full"></span>
+                <a href="tel:+249123952092" className="text-lg text-gray-800 hover:text-[#3bb7dc]">
                   0123952092
                 </a>
               </div>
@@ -65,7 +65,7 @@ export default function ContactUs() {
                 {/* Email Icon */}
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6 text-blue-600"
+                    className="w-6 h-6 text-[#3bb7dc]"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"

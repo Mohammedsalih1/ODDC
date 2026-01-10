@@ -37,14 +37,14 @@ export default function BeforeAfterGallery() {
     <>
     <GallerySection />
     <section className="py-16 mt-2 px-4 md:px-12 bg-gray-50" dir="rtl">
-      <div className="max-w-6xl mx-auto text-center mb-12">
+      <motion.div initial={{y: 20, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{delay: 0.3, duration: 0.5}} className="max-w-6xl mx-auto text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
           قبل و بعد
         </h2>
         <p className="text-gray-600 mt-2 text-lg">
           نتائج حقيقية لعملائنا، تعكس جودة الرعاية والخبرة الطبية
         </p>
-      </div>
+      </motion.div>
 
       <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {cases.map((item) => (
@@ -53,9 +53,7 @@ export default function BeforeAfterGallery() {
             onMouseEnter={() => setActive(item.id)}
             onMouseLeave={() => setActive(null)}
             className="bg-white shadow-lg rounded-xl overflow-hidden cursor-pointer group relative"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
+            initial={{y: 20, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{delay: 0.5, duration: 0.5}}
           >
             <div className="relative h-90 w-full">
               <Image

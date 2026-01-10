@@ -31,21 +31,41 @@ const doctors = [
     specialty: "طبيبة اسنان عمومي",
     image: "/staff-members/doc4.jpg",
   },
-//   {
-//     name: "د. حسام كمال",
-//     specialty: "طبيب أسنان عام",
-//     image: "/doctors/doc5.jpg",
-//   },
-//   {
-//     name: "د. روان حسين",
-//     specialty: "أخصائية أسنان أطفال",
-//     image: "/doctors/doc6.jpg",
-//   },
+  {
+    name: "د. داليا صديق أحمد",
+    specialty: "نائب اخصائي طب وجراحة الاسنان",
+    image: "/staff-members/doc5.jpeg",
+  },
+  {
+    name: "د. محمد طه إبراهيم",
+    specialty: "نائب أخصائي طب الأسنان الترميمي",
+    image: "/staff-members/doc6.jpeg",
+  },
+  {
+    name: "د. مؤمن أسامة عبدالله",
+    specialty: "طبيب أسنان عام",
+    image: "/staff-members/doc7.jpeg",
+  },
+  {
+    name: "د. سالي محمد الفاتح عبدالرحمن",
+    specialty: "اخصائية صحة الفم والأسنان",
+    image: "/staff-members/doc8.jpeg",
+  },
+  {
+    name: "بروفسير بكري جبارة قسم الله",
+    specialty: " إستشاري التأهيل الفموي  وجراحة اللثة والليزر",
+    image: "/staff-members/doc9.jpeg",
+  },
+  {
+    name: "د. سماح حيدر بن عوف",
+    specialty: "أخصائية التقويم",
+    image: "/staff-members/doc10.jpeg",
+  },
 ];
 
 export default function DoctorsSection() {
   return (
-    <section id="doctors" className="py-20 border-b border-blue-200 bg-white">
+    <section id="doctors" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-5 text-[#1A3C6E]">
           فريق الأطباء <Image src="/images/team.png" alt="" width={42} height={42} className="inline-block w-14 h-14 mb-1" />
@@ -77,7 +97,7 @@ export default function DoctorsSection() {
               key={index}
               className="bg-white rounded-xl p-4 hover:shadow-xl transition"
             >
-              <div className="w-24 h-24 mx-auto overflow-hidden rounded-full border-4 border-blue-500 shadow-md">
+              <div className="w-24 h-24 mx-auto overflow-hidden rounded-full border-4 border-[#3bb7dc] shadow-md">
                 <Image width={300} height={300}
                   src={doc.image}
                   alt={doc.name}
@@ -91,7 +111,7 @@ export default function DoctorsSection() {
                 </h3>
                 <p className="text-gray-600 mt-1 text-[15px]">{doc.specialty}</p>
                 {doc.role && (
-                  <p className="text-white mx-auto py-1.5 mt-2 px-4 w-fit text-sm rounded-[37%_38%_50%_0%/75%_0%_50%_10%] bg-blue-500">{doc.role}</p>
+                  <p className="text-white mx-auto py-1.5 mt-2 px-4 w-fit text-sm rounded-[37%_38%_50%_0%/75%_0%_50%_10%] bg-[#3bb7dc]">{doc.role}</p>
                 )}
               </div>
 

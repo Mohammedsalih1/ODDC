@@ -1,5 +1,5 @@
 "use client";
-
+import { motion } from "framer-motion";
 import Image from "next/image";
 import ImageSlider from "./Slider";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -111,7 +111,7 @@ export default function ServicesSection() {
 
           {services.map((service, i) => (
             <SwiperSlide key={i}>
-              <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition border border-gray-100 h-full">
+              <motion.div initial={{y: 20, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{delay: 0.5, duration: 0.5}} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition border border-gray-100 h-full">
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Image src={service.icon} alt="" width={32} height={32} className="w-8 h-8" />
                 </div>
@@ -130,7 +130,7 @@ export default function ServicesSection() {
                     ))}
                   </ul>
                 )}
-              </div>
+              </motion.div>
               <div className="custom-pagination text-center mt-1"></div>
             </SwiperSlide>
           ))};

@@ -28,21 +28,21 @@ const Footer = () => {
 
         {/* QUICK LINKS */}
         <div>
-          <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-4">
+          <h3 className="text-xl font-semibold text-[#3bb7dc] dark:text-blue-400 mb-4">
             روابط سريعة
           </h3>
           <ul className="space-y-2 text-gray-700 dark:text-gray-300">
-            <li><a href="#services" className="hover:text-blue-600">الخدمات</a></li>
-            <li><a href="#doctors" className="hover:text-blue-600">الأطباء</a></li>
-            <li><a href="#about" className="hover:text-blue-600">من نحن</a></li>
-            <li><a href="#appointment" className="hover:text-blue-600">احجز موعد</a></li>
-            <li><a href="#contact" className="hover:text-blue-600">اتصل بنا</a></li>
+            <li><a href="#services" className="hover:text-[#3bb7dc]">الخدمات</a></li>
+            <li><a href="#doctors" className="hover:text-[#3bb7dc]">الأطباء</a></li>
+            <li><a href="#about" className="hover:text-[#3bb7dc]">من نحن</a></li>
+            <li><a href="#appointment" className="hover:text-[#3bb7dc]">احجز موعد</a></li>
+            <li><a href="#contact" className="hover:text-[#3bb7dc]">اتصل بنا</a></li>
           </ul>
         </div>
 
         {/* CLINIC INFO */}
         <div>
-          <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-4">
+          <h3 className="text-xl font-semibold text-[#3bb7dc] dark:text-blue-400 mb-4">
             معلومات العيادة
           </h3>
           <ul className="space-y-3 text-gray-700 dark:text-gray-300">
