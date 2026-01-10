@@ -166,15 +166,18 @@ const Company = () => {
               
               className="group bg-gray-50 border border-gray-200 rounded-2xl p-8 hover:border-[#3bb7dc] hover:shadow-xl transition duration-300 flex flex-col items-center justify-center"
             >
+              <div>
               <Image
                 src="/images/insurance2.JPG"
-                width={447}
-                height={447}
-                // width={300} 
-                // height={300}
+                // width={447}
+                // height={447}
+                width={300} 
+                height={300}
                 alt="Insurance Logo"
                 className="object-cover w-full h-full rounded-2xl"
               />
+              </div>
+
               <h3 className="text-sm md:text-xl pt-2">ديوان الذكاة</h3>
             </div>
           </div>
