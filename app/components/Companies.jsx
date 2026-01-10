@@ -152,7 +152,7 @@ const Company = () => {
               className="group bg-gray-50 border border-gray-200 rounded-2xl p-8 hover:border-[#3bb7dc] hover:shadow-xl transition duration-300 flex flex-col items-center justify-center"
             >
               <Image
-                src="/images/insurance1.JPG"
+                src="/insurance1.JPG"
                 // width={447}
                 // height={447}
                 width={300} 
@@ -168,7 +168,7 @@ const Company = () => {
             >
               <div>
               <Image
-                src="/images/insurance2.JPG"
+                src="/insurance2.JPG"
                 // width={447}
                 // height={447}
                 width={300} 
