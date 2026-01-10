@@ -17,7 +17,7 @@ export default function GallerySection() {
   ];
 
   return (
-    <section className="py-20 bg-gray-50 mt-5 border-b border-blue-400" id="gallery">
+    <section className="py-20 bg-gray-50 mt-5" id="gallery">
       <div  className="max-w-7xl mx-auto px-6">
 
         {/* Headline */}

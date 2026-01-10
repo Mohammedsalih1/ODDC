@@ -65,7 +65,7 @@ export default function AppointmentSection() {
   };
 
   return (
-    <section id="appointment" className="py-20 bg-gray-50 border-b border-blue-200">
+    <section id="appointment" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
 
         {/* ---------- IMAGE ---------- */}
