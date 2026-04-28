@@ -11,13 +11,15 @@ import ClinicSections from "./components/ClinicSections";
 import InsuranceSection from "./components/Companies";
 import ImageSlider from "./components/Slider";
 import Company from "./components/Companies";
+import NewHero from "./components/NewHero"
 
 export default function Home() {
 
   return (
     <>
-      {/* <Navbar /> */}
-      <ClinicSections />
+      <Navbar />
+      {/* <ClinicSections /> */}
+      <NewHero />
       {/* <HeaderSection /> */}
       <AboutUsSection />
       <ServicesSection />
